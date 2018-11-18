@@ -1,33 +1,66 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>YLiXiang</title>
-	<script type="text/javascript">
-	
-		function browserRedirect() {
-		    var sUserAgent = navigator.userAgent.toLowerCase();
-		    var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
-		    var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
-		    var bIsMidp = sUserAgent.match(/midp/i) == "midp";
-		    var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
-		    var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
-		    var bIsAndroid = sUserAgent.match(/android/i) == "android";
-		    var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
-		    var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
-		    if (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) ){
-		        window.location.href="https://blog.csdn.net/LXFX1108";
-		    } else {
-		        window.location.href="http://m.blog.csdn.net/blog/index?username=LXFX1108";
-		    }
-		}
+---
+layout: default
+menu: home
+css: ['index.css', 'sidebar-popular-repo.css']
+---
+<section class="jumbotron">
+    <div class="container">
+        <h1>{{ site.title }}</h1>
+        <div id="jumbotron-meta-info">
+            {% if site.location %}
+            <span class="meta-info">
+                <span class="octicon octicon-location"></span>
+                {{ site.location }}
+            </span> {% endif %}
+            {% if site.company %}
+            <span class="meta-info hvr-grow">
+                <span class="octicon octicon-organization"></span>
+                <a href="{{ site.company_url }}" target="_blank">{{ site.company }}</a>
+            </span> {% endif %}
+            {% if site.github_username %}
+            <span class="meta-info hvr-grow">
+                <span class="octicon octicon-mark-github"></span>
+                <a href="{{ site.github_url }}" target="_blank">@{{ site.github_username }}</a>
+            </span> {% endif %}
+        </div>
+    </div>
+</section>
+<section class="content container">
 
-		browserRedirect();
-	</script>
-</head>
-<body>
+    <div class="row">
 
-	<h1>客官，请稍等，马上跳转我的CSDN博客</h1>
+        <!-- Post List -->
+        <div class="col-md-8">
 
-</body>
-</html>
+            <ol class="post-list">
+                {% for post in paginator.posts %}
+                <li class="post-list-item">
+                    <h2 class="post-list-title">
+                        <a class="hvr-underline-from-center" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+                    </h2>
+                    <p class="post-list-description">
+                        {{ post.excerpt | strip_html | strip }}
+                    </p>
+                    <p class="post-list-meta">
+                        <span class="octicon octicon-calendar"></span> {{ post.date | date: "%Y/%m/%d" }}
+                    </p>
+                </li>
+                {% endfor %}
+            </ol>
+
+            <!-- Pagination -->
+            {% include pagination.html %}
+
+            <!-- Comments -->
+            {% include disqus-comments.html %}
+
+        </div>
+
+        <div class="col-md-4">
+            {% include sidebar-popular-repo.html %}
+        </div>
+
+    </div>
+
+</section>
+

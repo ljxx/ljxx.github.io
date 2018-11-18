@@ -9,11 +9,11 @@
 title: YLiXiang的博客 # ex. I m Chuan
 name: YLiXiang # ex. DONGChuan
 email: QNjingling1108@163.com
-location: My location # ex. Nice, France
-company: MyCompany
-company_url: my_company_website
+location: 上海 # ex. Nice, France
+company: CSDN博客
+company_url: https://blog.csdn.net/LXFX1108
 github_url: https://github.com/ljxx # ex. https://github.com/DONGChuan
-github_username: ljxx# ex. DONGChuan
+github_username: ljxx # ex. DONGChuan
 description: description_of_your_web_site
 favicon: favicon.png # Image must be in assets/images
 repository: ljxx/ljxx.github.io # ex. DONGChuan/DONGChuan.github.io
@@ -51,7 +51,7 @@ kramdown:
 disque: my_disque_settings # ex. httpdongchuangithubio.disqus.com
 
 # Pagination
-paginate: 10
+paginate: 15
 paginate_path: 'page:num'
 
 # Navigation. If you do not like these modules, just remove them :D

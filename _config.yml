@@ -85,5 +85,5 @@ theme: hexo-theme-xups #landscape
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com/ljxx/ljxx.github.io.git
+  repo: https://github.com/ljxx/ljxx.github.io.git
   branch: master

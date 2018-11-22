@@ -442,12 +442,7 @@ var JELON = window.JELON || {};
         } else {
           html = [
             '<span class="sign-txt">GitHub 未登录?</span>',
-            // '<a href="https://github.com/login/oauth/authorize?scope=public_repo&redirect_uri=',
-            //   location.href.indexOf('?') !== -1 ? encodeURIComponent(location.href.substring(0, location.href.indexOf('?'))) : encodeURIComponent(location.href),
-            //   '&client_id=' + JL.options.clientId + '&client_secret=' + JL.options.clientSecret + '" class="sign-link">',
-            //   '登录',
-            // '</a>'
-            '<a href="https://github.com/login/oauth/authorize?scope=public_repo&client_id=' + JL.options.clientId'" class="sign-link">',
+            '<a href="https://github.com/login/oauth/authorize?scope=public_repo&client_id=' + JL.options.clientId + '&client_secret=' + JL.options.clientSecret + '" class="sign-link">',
               '登录',
             '</a>'
           ].join('');

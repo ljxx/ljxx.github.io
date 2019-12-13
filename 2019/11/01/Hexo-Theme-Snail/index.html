@@ -367,28 +367,6 @@
 
                 <!-- 评论 -->
                 
-          <div class="vcomment"></div>
-          <script src="https://cdn.jsdelivr.net/npm/valine"></script>
-          
-          <!-- <script src="../../../../script/Valine.min.js"></script>   -->
-          <script>
-            var valine = new Valine();
-            var path = window.location.pathname.replace('index.html','');
-            var isEN = path.indexOf('en') > -1;
-            path = isEN ? path.replace('en/','') : path;
-            valine.init({
-                el: '.vcomment',
-                appId: '',
-                appKey: '',
-                notify: false,
-                placeholder: '欢迎交流讨论...',
-                avatar:'mm',
-                path:path,
-                lang: isEN ? 'en' : 'zh-cn',
-                visitor:true
-            })
-          </script>
-        
 
         
             </div>

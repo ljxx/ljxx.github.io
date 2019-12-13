@@ -4,6 +4,57 @@
   
     
     <entry>
+      <title>MyThreeHexo</title>
+      <link href="/2019/12/12/MyThreeHexo/"/>
+      <url>/2019/12/12/MyThreeHexo/</url>
+      
+        <content type="html"><![CDATA[<p>我是主题</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>我的第二篇文章</title>
+      <link href="/2019/12/12/mySecondHexo/"/>
+      <url>/2019/12/12/mySecondHexo/</url>
+      
+        <content type="html"><![CDATA[<p>我的第二篇文章</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Android, studio </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>我的第一篇文章</title>
+      <link href="/2019/12/12/myFirsstHexo/"/>
+      <url>/2019/12/12/myFirsstHexo/</url>
+      
+        <content type="html"><![CDATA[<p>我的第一一篇文章</p><p>daovoice(‘init’, {<br>  app_id: “8575e484”,<br>  user_id: “NO_89757”, // 必填: 该用户在您系统上的唯一ID<br>  email: “daovoice@example.com”, // 选填:  该用户在您系统上的主邮箱<br>  name: “道客船长”, // 选填: 用户名<br>  signed_up: 1449821660 // 选填: 用户的注册时间，用Unix时间戳表示<br>});<br>daovoice(‘update’);</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> android, android studio, hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo-Theme-Snail</title>
       <link href="/2019/11/01/Hexo-Theme-Snail/"/>
       <url>/2019/11/01/Hexo-Theme-Snail/</url>
